@@ -8,8 +8,8 @@ import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { EducationSection } from "@/components/sections/EducationSection";
 import { CertificationsSection } from "@/components/sections/CertificationsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
-import { SoftSkillsSection } from "@/components/sections/SoftSkillsSection"; // New import
-import { LanguagesSection } from "@/components/sections/LanguagesSection"; // New import
+import { SoftSkillsSection } from "@/components/sections/SoftSkillsSection";
+import { LanguagesSection } from "@/components/sections/LanguagesSection";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 const Index = () => {
@@ -23,10 +23,10 @@ const Index = () => {
         <AnimatedSection id="skills">
           <SkillsSection />
         </AnimatedSection>
-        <AnimatedSection id="soft-skills"> {/* New section */}
+        <AnimatedSection id="soft-skills">
           <SoftSkillsSection />
         </AnimatedSection>
-        <AnimatedSection id="languages"> {/* New section */}
+        <AnimatedSection id="languages">
           <LanguagesSection />
         </AnimatedSection>
         <AnimatedSection id="projects">
