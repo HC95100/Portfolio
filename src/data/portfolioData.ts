@@ -4,7 +4,7 @@ export const portfolioData = {
   phone: "0652937631",
   bio: "Je suis Hamza CHOHABI, à la recherche d'une alternance dans l'IT à la rentrée 2025. Mes domaines d'intérêt incluent le Support & maintenance informatique, l'Administration systèmes & réseaux, et le Big Data. Je suis motivé à appliquer mes compétences et à apprendre dans un environnement stimulant, idéalement sur un rythme de 2 semaines en entreprise / 2 semaines en formation.",
   profilePicture: "/placeholder-profile.jpg", // Mettez le chemin de votre photo ici
-  cvDownloadLink: "/placeholder-cv.pdf", // Mettez le chemin de votre CV PDF ici
+  cvDownloadLink: "/CV.pdf", // Mettez le chemin de votre CV PDF ici
 
   skills: {
     technical: [
