@@ -29,9 +29,8 @@ export const EducationSection: React.FC = () => {
                 <div className="w-6 h-6 bg-primary rounded-full z-10 ring-4 ring-background flex items-center justify-center">
                   <GraduationCap className="h-4 w-4 text-primary-foreground" />
                 </div>
-                {index < portfolioData.education.length - 1 && (
-                  <div className="h-full w-0.5 bg-primary/30 absolute top-0 mt-6" style={{ height: 'calc(100% + 2.5rem)' }}></div>
-                )}
+                {/* La ligne apparaît désormais pour tous les éléments, y compris le dernier */}
+                <div className="h-full w-0.5 bg-primary/30 absolute top-0 mt-6" style={{ height: 'calc(100% + 2.5rem)' }}></div>
               </div>
               <Card className="ml-8 md:ml-12 flex-grow shadow-lg hover:shadow-xl transition-shadow duration-300 border-primary/20">
                 <CardHeader>
