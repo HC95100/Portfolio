@@ -118,8 +118,8 @@ export const portfolioData = {
   ],
 
   socialLinks: {
-    github: "https://github.com/votre-utilisateur", // Veuillez remplacer par votre lien GitHub réel
-    linkedin: "https://www.linkedin.com/in/votre-profil-linkedin", // Veuillez remplacer par votre lien LinkedIn réel
+    github: "https://github.com/HC95100",
+    linkedin: "https://www.linkedin.com/in/hamza-chohabi-b15a4b2a5",
     // Ajoutez d'autres liens si nécessaire
   },
 };
