@@ -1,23 +1,24 @@
 export const portfolioData = {
-  fullName: "Votre Nom Complet",
-  email: "votre.email@example.com",
-  phone: "+33 6 12 34 56 78",
-  bio: "Je suis un(e) étudiant(e) passionné(e) par [votre domaine, ex: les Réseaux & Télécommunications, l'Informatique, la Communication]. Je suis à la recherche d'opportunités pour appliquer mes compétences et continuer à apprendre dans un environnement stimulant. Mon objectif est de contribuer à des projets innovants et de développer des solutions efficaces.",
+  fullName: "Hamza CHOHABI",
+  email: "chohabi.hamza@gmail.com",
+  phone: "0652937631",
+  bio: "Je suis Hamza CHOHABI, à la recherche d'une alternance dans l'IT à la rentrée 2025. Mes domaines d'intérêt incluent le Support & maintenance informatique, l'Administration systèmes & réseaux, et le Big Data. Je suis motivé à appliquer mes compétences et à apprendre dans un environnement stimulant, idéalement sur un rythme de 2 semaines en entreprise / 2 semaines en formation.",
   profilePicture: "/placeholder-profile.jpg", // Mettez le chemin de votre photo ici
   cvDownloadLink: "/placeholder-cv.pdf", // Mettez le chemin de votre CV PDF ici
 
   skills: {
     technical: [
+      "Réseau (Commutation, administration réseau, TCP/IP & OSI)",
+      "Linux (Debian)",
+      "BIOS",
+      "Shell Bash",
+      "HTML",
+      "CSS",
       "JavaScript",
-      "TypeScript",
-      "React",
-      "Node.js",
       "Python",
       "SQL",
-      "Git",
-      "Docker",
-      "Cloud (AWS/Azure)",
-      "Réseaux (TCP/IP, Routage)",
+      "Cybersécurité (Fondamentaux et sensibilisation)",
+      "Pack Office",
     ],
     human: [
       "Communication",
@@ -28,35 +29,27 @@ export const portfolioData = {
       "Curiosité",
     ],
     languages: [
-      "Français (Langue maternelle)",
-      "Anglais (Courant)",
-      "Espagnol (Intermédiaire)",
+      "Anglais (Niveau B2)",
+      "Espagnol (Niveau B1)",
+      "Arabe (Niveau A2)",
     ],
   },
 
   projects: [
     {
       id: 1,
-      title: "Projet de Développement Web E-commerce",
-      description: "Développement d'une plateforme e-commerce complète avec gestion des produits, des utilisateurs et des commandes.",
-      tools: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-      githubLink: "https://github.com/votre-utilisateur/projet-ecommerce",
-      liveLink: "https://projet-ecommerce.example.com",
-    },
-    {
-      id: 2,
-      title: "Application Mobile de Gestion de Tâches",
-      description: "Création d'une application mobile intuitive pour organiser et suivre les tâches quotidiennes, avec notifications et synchronisation cloud.",
-      tools: ["React Native", "Firebase", "Redux"],
-      githubLink: "https://github.com/votre-utilisateur/app-taches",
+      title: "Conception et déploiement d’une infrastructure réseau sécurisée",
+      description: "Projet SAE pour un cabinet d’avocats : simulation sous Cisco Packet Tracer, segmentation par VLAN (LAN, DMZ, Wi-Fi invité), configuration du routage inter-VLAN, des ACLs et des services essentiels (DHCP, DNS), virtualisation de serveurs, choix et justification du matériel en fonction du cahier des charges et du budget. Présentation argumentée des solutions devant un jury pédagogique.",
+      tools: ["Cisco Packet Tracer", "VLAN", "ACLs", "DHCP", "DNS", "Virtualisation"],
+      githubLink: null,
       liveLink: null,
     },
     {
-      id: 3,
-      title: "Analyse de Données avec Python",
-      description: "Projet d'analyse de données sur un jeu de données public pour identifier des tendances et générer des visualisations interactives.",
-      tools: ["Python", "Pandas", "Matplotlib", "Jupyter Notebook"],
-      githubLink: "https://github.com/votre-utilisateur/analyse-donnees",
+      id: 2,
+      title: "Traitement de données (SAE)",
+      description: "Interprétation d’un fichier CSV en HTML pour présenter des données structurées.",
+      tools: ["CSV", "HTML"],
+      githubLink: null,
       liveLink: null,
     },
   ],
@@ -64,26 +57,20 @@ export const portfolioData = {
   experiences: [
     {
       id: 1,
-      role: "Stagiaire Développeur Fullstack",
-      company: "Tech Solutions Inc.",
-      period: "Juin 2023 - Août 2023",
+      role: "Stagiaire d’observation et d’initiation (Service DSI)",
+      company: "Segula Technologies",
+      period: "Juillet 2023",
       missions: [
-        "Développement de nouvelles fonctionnalités pour une application web interne (React, Node.js).",
-        "Participation à la conception de l'architecture des bases de données (PostgreSQL).",
-        "Rédaction de tests unitaires et d'intégration.",
-        "Collaboration avec l'équipe produit pour affiner les spécifications.",
+        "Initiation avec les équipes réseaux, système, support et sécurité.",
       ],
     },
     {
       id: 2,
-      role: "Alternant Ingénieur Réseaux",
-      company: "GlobalNet Services",
-      period: "Septembre 2022 - Septembre 2024",
+      role: "Data Analyst Freelance",
+      company: "Outlier",
+      period: "Non spécifié", // Période non spécifiée dans le CV
       missions: [
-        "Configuration et maintenance des équipements réseau (routeurs, switchs Cisco).",
-        "Surveillance des performances réseau et résolution des incidents.",
-        "Mise en œuvre de solutions de sécurité réseau (pare-feu, VPN).",
-        "Documentation des architectures réseau et des procédures d'exploitation.",
+        "Collecte et évaluation de données pour l’IA.",
       ],
     },
   ],
@@ -91,21 +78,48 @@ export const portfolioData = {
   education: [
     {
       id: 1,
-      degree: "Diplôme d'Ingénieur en Informatique",
-      institution: "École Nationale Supérieure d'Informatique (ENSI)",
-      period: "2021 - 2024",
+      degree: "BUT Réseau et Télécommunication (1ère année)",
+      institution: "Université Sorbonne Paris Nord",
+      period: "Depuis septembre 2024",
     },
     {
       id: 2,
-      degree: "Licence en Sciences et Technologies",
-      institution: "Université Paris Cité",
-      period: "2018 - 2021",
+      degree: "Baccalauréat général (Spécialités : Mathématiques et SVT, Section Européenne Anglais, Mention Bien)",
+      institution: "Lycée Georges Braque",
+      period: "2021 – 2024",
+    },
+    {
+      id: 3,
+      degree: "Brevet des collèges (Mention Très bien, Option latin)",
+      institution: "Collège Ariane",
+      period: "2017 – 2021",
+    },
+  ],
+
+  certifications: [
+    {
+      id: 1,
+      name: "Certification sensibilisation à la cybersécurité",
+      issuer: "Microsoft & LinkedIn",
+      date: "Mars 2025",
+    },
+    {
+      id: 2,
+      name: "Cambridge English Certification B2",
+      issuer: "Cambridge English",
+      date: "Juillet 2024",
+    },
+    {
+      id: 3,
+      name: "Permis B (conduite)",
+      issuer: "France",
+      date: "Décembre 2024",
     },
   ],
 
   socialLinks: {
-    github: "https://github.com/votre-utilisateur",
-    linkedin: "https://www.linkedin.com/in/votre-profil-linkedin",
+    github: "https://github.com/votre-utilisateur", // Veuillez remplacer par votre lien GitHub réel
+    linkedin: "https://www.linkedin.com/in/votre-profil-linkedin", // Veuillez remplacer par votre lien LinkedIn réel
     // Ajoutez d'autres liens si nécessaire
   },
 };

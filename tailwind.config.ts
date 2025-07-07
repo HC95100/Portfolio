@@ -7,8 +7,8 @@ export default {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./src/components/layout/**/*.{ts,tsx}", // Add this line
-    "./src/components/sections/**/*.{ts,tsx}", // Add this line
+    "./src/components/layout/**/*.{ts,tsx}",
+    "./src/components/sections/**/*.{ts,tsx}", // Assure que tous les fichiers de sections sont inclus
   ],
   prefix: "",
   theme: {
