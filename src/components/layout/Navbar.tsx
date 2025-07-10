@@ -43,7 +43,7 @@ export const Navbar: React.FC = () => {
           className="flex items-center space-x-4"
         >
           <a href="#hero" onClick={() => scrollToSection("hero")} className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
-            {portfolioData.fullName.split(' ')[0]}
+            {portfolioData.fullName}
           </a>
         </motion.div>
         <motion.div
