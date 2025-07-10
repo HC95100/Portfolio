@@ -3,7 +3,7 @@ export const portfolioData = {
   email: "chohabi.hamza@gmail.com",
   phone: "0652937631",
   bio: "Étudiant en BUT Réseau et Télécommunication, je recherche une alternance dans l'IT pour septembre 2025. Passionné par les technologies réseau, la cybersécurité et le développement d'applications, je souhaite mettre mes compétences techniques au service d'une entreprise innovante. Titulaire du permis B, je suis mobile et motivé pour contribuer à des projets d'envergure dans les domaines de l'administration systèmes & réseaux, du support informatique et de la cybersécurité. Rythme souhaité : 2 semaines en entreprise / 2 semaines en formation",
-  profilePicture: "/placeholder-profile.jpg", // Mettez le chemin de votre photo ici
+  profilePicture: "/hamza-profile.png", // Mettez le chemin de votre photo ici
   cvDownloadLink: "/CV.pdf", // Mettez le chemin de votre CV PDF ici
 
   skills: {
