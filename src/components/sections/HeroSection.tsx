@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/data/portfolioData";
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const HeroSection: React.FC = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   // Log the image path to the console for debugging
   console.log("Profile Picture Path:", portfolioData.profilePicture);
 
@@ -18,17 +20,27 @@ export const HeroSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col items-center lg:items-start text-center lg:text-left"
         >
-          {portfolioData.profilePicture ? (
-            <img
-              src={portfolioData.profilePicture}
-              alt={portfolioData.fullName}
-              className="w-48 h-48 rounded-full object-cover mb-6 shadow-lg"
-            />
-          ) : (
-            <div className="bg-light-gray rounded-full w-48 h-48 flex items-center justify-center overflow-hidden mb-6 shadow-lg">
-              <Mail className="text-dark-blue text-6xl" /> {/* Placeholder icon */}
-            </div>
-          )}
+          {/* Profile Picture / Initials Container */}
+          <div className="relative w-48 h-48 rounded-full mb-6 shadow-lg flex items-center justify-center bg-light-gray overflow-hidden">
+            {/* Initials fallback */}
+            {!imageLoaded && (
+              <div className="text-dark-blue text-6xl font-bold">
+                HC
+              </div>
+            )}
+
+            {/* Profile Picture */}
+            {portfolioData.profilePicture && (
+              <img
+                src={portfolioData.profilePicture}
+                alt={portfolioData.fullName}
+                className={`w-full h-full object-cover absolute top-0 left-0 ${imageLoaded ? 'block' : 'hidden'}`}
+                onLoad={() => setImageLoaded(true)}
+                onError={() => setImageLoaded(false)}
+              />
+            )}
+          </div>
+
           <div className="mt-4 text-center">
             <div className="flex justify-center space-x-4">
               {portfolioData.socialLinks.linkedin && (
