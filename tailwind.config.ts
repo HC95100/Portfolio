@@ -64,6 +64,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // New custom colors for the design
+        'blue-gradient-start': '#0D6EFD',
+        'blue-gradient-end': '#0A2647',
+        'orange-accent': '#FF7700',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -91,6 +95,10 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
     },
   },
