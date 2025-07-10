@@ -5,6 +5,9 @@ import { Download, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const HeroSection: React.FC = () => {
+  // Log the image path to the console for debugging
+  console.log("Profile Picture Path:", portfolioData.profilePicture);
+
   return (
     <section id="hero" className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 bg-background">
       <div className="container grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-12 items-center py-10">
