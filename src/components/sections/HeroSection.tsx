@@ -65,9 +65,9 @@ export const HeroSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="font-extrabold text-foreground mb-4 leading-tight font-montserrat"
           >
-            <span className="text-gradient-blue text-4xl md:text-6xl">{portfolioData.fullName}</span>
+            <span className="text-4xl md:text-6xl">{portfolioData.fullName}</span>
             <br />
-            <span className="text-2xl md:text-4xl">Votre Futur Alternant Dans l'IT</span>
+            <span className="text-xl md:text-3xl">Votre Futur Alternant Dans l'IT</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: -20 }}
