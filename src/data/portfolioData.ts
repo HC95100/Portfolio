@@ -7,26 +7,67 @@ export const portfolioData = {
   cvDownloadLink: "/CV.pdf", // Mettez le chemin de votre CV PDF ici
 
   skills: {
-    technical: [
-      "Cisco Packet Tracer", "Commutation", "Administration réseau", "VLAN", "DMZ", "Routage inter-VLAN", "TCP/IP", "OSI", "DHCP", "DNS", "ACL", "Filtrage ICMP", "Isolation Wi-Fi invité", "Cisco ISR", "Catalyst 2960",
-      "Administration Linux (Debian)", "Gestion BIOS", "Scripting Bash", "Virtualisation (VirtualBox, KVM)",
-      "PHP", "GLPI", "HTML", "CSS (responsive)", "JavaScript", "Site vitrine (WordPress)", "Intégration web",
-      "Python", "SQL", "MariaDB", "PostgreSQL", "Requêtes avancées", "Schémas multi-utilisateurs", "PgAdmin",
-      "Cybersécurité (ACL, segmentation réseau, sécurisation applications web, bonnes pratiques, DMZ, FusionInventory)",
-      "Pack Office (Word, Excel, PowerPoint)",
+    technicalCategories: [
+      {
+        category: "Réseau & Infrastructure",
+        icon: "Network",
+        skills: [
+          { name: "Cisco Packet Tracer", description: "Simulation réseau, VLAN, routage inter-VLAN", icon: "Router" },
+          { name: "Administration Réseau", description: "TCP/IP, OSI, DHCP, DNS, ACL, DMZ", icon: "Server" },
+          { name: "Technologies Sans-fil", description: "Isolation Wi-Fi invité, filtrage ICMP", icon: "Wifi" },
+          { name: "Cisco ISR", description: "Configuration et gestion des routeurs Cisco ISR", icon: "Router" },
+          { name: "Catalyst 2960", description: "Configuration et gestion des commutateurs Catalyst 2960", icon: "Switch" },
+        ]
+      },
+      {
+        category: "Systèmes & Virtualisation",
+        icon: "Cpu",
+        skills: [
+          { name: "Administration Linux", description: "Debian, gestion BIOS, administration système", icon: "Linux" },
+          { name: "Scripting Bash", description: "Automatisation, scripts système", icon: "Terminal" },
+          { name: "Virtualisation", description: "VirtualBox, KVM", icon: "HardDrive" },
+        ]
+      },
+      {
+        category: "Développement Web",
+        icon: "Code",
+        skills: [
+          { name: "PHP", description: "Développement backend, applications web", icon: "FileCode" },
+          { name: "Frontend", description: "HTML, CSS responsive, JavaScript", icon: "Monitor" },
+          { name: "CMS & Intégration", description: "WordPress, sites vitrine, intégration web", icon: "Layout" },
+        ]
+      },
+      {
+        category: "Programmation & Bases de Données",
+        icon: "Database",
+        skills: [
+          { name: "Python", description: "Programmation, automatisation", icon: "Python" },
+          { name: "SQL", description: "Requêtes avancées, schémas multi-utilisateurs", icon: "Database" },
+          { name: "Bases de Données", description: "MariaDB, PostgreSQL, PgAdmin", icon: "Server" },
+        ]
+      },
+      {
+        category: "Cybersécurité & Outils",
+        icon: "Shield",
+        skills: [
+          { name: "Cybersécurité", description: "Segmentation réseau, sécurisation applications web, bonnes pratiques, DMZ, FusionInventory", icon: "ShieldCheck" },
+          { name: "Gestion IT", description: "GLPI, FusionInventory", icon: "Tool" },
+          { name: "Bureautique", description: "Pack Office (Word, Excel, PowerPoint)", icon: "FileText" },
+        ]
+      },
     ],
     human: [
-      "Communication",
-      "Travail d'équipe",
-      "Résolution de problèmes",
-      "Adaptabilité",
-      "Autonomie",
-      "Curiosité",
+      { name: "Autonomie & Proactivité", description: "Capacité à prendre des initiatives et à travailler de manière indépendante sur des projets techniques complexes.", icon: "Lightbulb" },
+      { name: "Rigueur & Méthode", description: "Approche structurée dans l'administration réseau, la gestion de systèmes et la programmation.", icon: "ClipboardCheck" },
+      { name: "Adaptabilité", description: "Aptitude à apprendre et à s'adapter rapidement aux nouvelles technologies et environnements.", icon: "RefreshCw" },
+      { name: "Résolution de Problèmes", description: "Compétence à identifier et résoudre des problèmes complexes en cybersécurité et administration système.", icon: "Puzzle" },
+      { name: "Communication", description: "Capacité à travailler en équipe et à communiquer efficacement sur des sujets techniques.", icon: "MessageSquare" },
+      { name: "Veille Technologique", description: "Intérêt pour la veille technologique et l'apprentissage continu dans le domaine IT.", icon: "Search" },
     ],
     languages: [
-      "Anglais (Niveau B2)",
-      "Espagnol (Niveau B1)",
-      "Arabe (Niveau A2)",
+      { name: "Anglais", level: "B2", certification: "Cambridge English Certification", icon: "Globe" },
+      { name: "Espagnol", level: "B1", certification: null, icon: "Globe" },
+      { name: "Arabe", level: "A2", certification: null, icon: "Globe" },
     ],
   },
 
@@ -110,12 +151,6 @@ export const portfolioData = {
     },
     {
       id: 2,
-      name: "Cambridge English Certification B2",
-      issuer: "Cambridge English",
-      date: "Juillet 2024",
-    },
-    {
-      id: 3,
       name: "Permis B (conduite)",
       issuer: "France",
       date: "Décembre 2024",

@@ -70,6 +70,13 @@ export default {
         'orange-accent': "hsl(var(--orange-accent))",
         'light-gray': "hsl(var(--light-gray))",
         'dark-text': "hsl(var(--dark-text))",
+        // New colors for skills section gradients
+        'purple-blue': "hsl(var(--purple-blue))",
+        'dark-purple': "hsl(var(--dark-purple))",
+        'pink-accent': "hsl(var(--pink-accent))",
+        'red-pink': "hsl(var(--red-pink))",
+        'light-orange-pastel': "hsl(var(--light-orange-pastel))",
+        'peach-pastel': "hsl(var(--peach-pastel))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -101,6 +108,7 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'], // Added Inter font
       },
     },
   },

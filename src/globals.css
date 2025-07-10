@@ -4,6 +4,8 @@
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 
 @layer base {
   :root {
@@ -43,6 +45,14 @@
     --orange-accent: 28 100% 50%; /* #FF7700 */
     --light-gray: 210 17% 97%; /* #F8F9FA */
     --dark-text: 210 17% 14%; /* #212529 */
+
+    /* New colors for skills section gradients */
+    --purple-blue: 230 70% 64%; /* #667eea */
+    --dark-purple: 260 30% 54%; /* #764ba2 */
+    --pink-accent: 300 90% 78%; /* #f093fb */
+    --red-pink: 350 88% 65%; /* #f5576c */
+    --light-orange-pastel: 30 100% 91%; /* #ffecd2 */
+    --peach-pastel: 20 98% 80%; /* #fcb69f */
   }
 
   .dark {
@@ -80,6 +90,14 @@
     --orange-accent: 28 100% 50%; /* #FF7700 */
     --light-gray: 217.2 32.6% 17.5%; /* Darker gray for dark mode */
     --dark-text: 210 40% 98%; /* Light text for dark mode */
+
+    /* New colors for skills section gradients in dark mode (adjust as needed) */
+    --purple-blue: 230 70% 64%;
+    --dark-purple: 260 30% 54%;
+    --pink-accent: 300 90% 78%;
+    --red-pink: 350 88% 65%;
+    --light-orange-pastel: 30 100% 91%;
+    --peach-pastel: 20 98% 80%;
   }
 }
 
@@ -90,6 +108,7 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif; /* Set Inter as default font */
   }
 }
 
@@ -106,4 +125,17 @@
 .bg-pattern {
   background-image: radial-gradient(hsl(var(--light-gray)) 1px, transparent 1px);
   background-size: 20px 20px;
+}
+
+/* Custom gradient for skill icons */
+.icon-gradient-purple-blue {
+  background: linear-gradient(135deg, hsl(var(--purple-blue)), hsl(var(--dark-purple)));
+}
+
+.icon-gradient-pink-red {
+  background: linear-gradient(135deg, hsl(var(--pink-accent)), hsl(var(--red-pink)));
+}
+
+.icon-gradient-orange-peach {
+  background: linear-gradient(135deg, hsl(var(--light-orange-pastel)), hsl(var(--peach-pastel)));
 }

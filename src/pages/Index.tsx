@@ -8,11 +8,13 @@ import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { EducationSection } from "@/components/sections/EducationSection";
 import { CertificationsSection } from "@/components/sections/CertificationsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { SoftSkillsSection } from "@/components/sections/SoftSkillsSection"; // New import
+import { LanguagesSection } from "@/components/sections/LanguagesSection"; // New import
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-pattern"> {/* Added bg-pattern here */}
+    <div className="min-h-screen flex flex-col bg-pattern">
       <Navbar />
       <main className="flex-grow">
         <AnimatedSection id="hero">
@@ -20,6 +22,12 @@ const Index = () => {
         </AnimatedSection>
         <AnimatedSection id="skills">
           <SkillsSection />
+        </AnimatedSection>
+        <AnimatedSection id="soft-skills"> {/* New section */}
+          <SoftSkillsSection />
+        </AnimatedSection>
+        <AnimatedSection id="languages"> {/* New section */}
+          <LanguagesSection />
         </AnimatedSection>
         <AnimatedSection id="projects">
           <ProjectsSection />
