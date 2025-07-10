@@ -11,9 +11,9 @@ export const CertificationsSection: React.FC = () => {
   };
 
   return (
-    <section id="certifications" className="py-16 px-4 bg-secondary">
+    <section id="certifications" className="py-16 px-4 bg-background">
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Mes Certifications</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-dark-blue mb-12 font-montserrat">Mes Certifications</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioData.certifications.map((cert, index) => (
             <motion.div
@@ -24,14 +24,14 @@ export const CertificationsSection: React.FC = () => {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-primary/20 h-full">
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-light-gray bg-white h-full">
                 <CardHeader className="flex flex-row items-center space-x-4 pb-2">
-                  <Award className="h-8 w-8 text-primary" />
-                  <CardTitle className="text-2xl font-semibold text-primary">{cert.name}</CardTitle>
+                  <Award className="h-8 w-8 text-blue-primary" />
+                  <CardTitle className="text-2xl font-semibold text-dark-blue font-montserrat">{cert.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-4">
-                  <p className="text-muted-foreground text-lg">{cert.issuer}</p>
-                  <p className="text-muted-foreground text-sm">{cert.date}</p>
+                  <p className="text-dark-text text-lg font-roboto">{cert.issuer}</p>
+                  <p className="text-dark-text text-sm font-roboto">{cert.date}</p>
                 </CardContent>
               </Card>
             </motion.div>

@@ -8,7 +8,7 @@ export default {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./src/components/layout/**/*.{ts,tsx}",
-    "./src/components/sections/**/*.{ts,tsx}", // Assure que tous les fichiers de sections sont inclus
+    "./src/components/sections/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -65,9 +65,11 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         // New custom colors for the design
-        'blue-gradient-start': '#0D6EFD',
-        'blue-gradient-end': '#0A2647',
-        'orange-accent': '#FF7700',
+        'blue-primary': "hsl(var(--blue-primary))",
+        'dark-blue': "hsl(var(--dark-blue))",
+        'orange-accent': "hsl(var(--orange-accent))",
+        'light-gray': "hsl(var(--light-gray))",
+        'dark-text': "hsl(var(--dark-text))",
       },
       borderRadius: {
         lg: "var(--radius)",

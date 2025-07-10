@@ -13,7 +13,7 @@ export const EducationSection: React.FC = () => {
   return (
     <section id="education" className="py-16 px-4 bg-background">
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Ma Formation</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-dark-blue mb-12 font-montserrat">Ma Formation</h2>
         <div className="relative pl-8 md:pl-16">
           {portfolioData.education.map((edu, index) => (
             <motion.div
@@ -26,16 +26,15 @@ export const EducationSection: React.FC = () => {
               className="mb-10 last:mb-0 flex items-start"
             >
               <div className="absolute left-0 md:left-8 flex flex-col items-center">
-                <div className="w-6 h-6 bg-primary rounded-full z-10 ring-4 ring-background flex items-center justify-center">
-                  <GraduationCap className="h-4 w-4 text-primary-foreground" />
+                <div className="w-6 h-6 bg-orange-accent rounded-full z-10 ring-4 ring-background flex items-center justify-center">
+                  <GraduationCap className="h-4 w-4 text-white" />
                 </div>
-                {/* La ligne apparaît désormais pour tous les éléments, y compris le dernier */}
-                <div className="h-full w-0.5 bg-primary/30 absolute top-0 mt-6" style={{ height: 'calc(100% + 2.5rem)' }}></div>
+                <div className="h-full w-0.5 bg-light-gray absolute top-0 mt-6" style={{ height: 'calc(100% + 2.5rem)' }}></div>
               </div>
-              <Card className="ml-8 md:ml-12 flex-grow shadow-lg hover:shadow-xl transition-shadow duration-300 border-primary/20">
+              <Card className="ml-8 md:ml-12 flex-grow shadow-lg hover:shadow-xl transition-shadow duration-300 border-light-gray bg-white">
                 <CardHeader>
-                  <CardTitle className="text-xl md:text-2xl text-primary">{edu.degree}</CardTitle>
-                  <p className="text-muted-foreground text-base md:text-lg">{edu.institution} | {edu.period}</p>
+                  <CardTitle className="text-xl md:text-2xl text-dark-blue font-montserrat">{edu.degree}</CardTitle>
+                  <p className="text-dark-text text-base md:text-lg font-roboto">{edu.institution} | {edu.period}</p>
                 </CardHeader>
                 <CardContent>
                   {/* Add more details if available in portfolioData, e.g., description, courses */}

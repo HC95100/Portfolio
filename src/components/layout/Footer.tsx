@@ -10,10 +10,10 @@ export const Footer: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="border-t py-8 bg-secondary text-secondary-foreground"
+      className="border-t border-light-gray py-8 bg-light-gray text-dark-text"
     >
       <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-center md:text-left">
+        <p className="text-sm text-center md:text-left font-roboto">
           &copy; {new Date().getFullYear()} {portfolioData.fullName}. Tous droits réservés.
         </p>
         <div className="flex space-x-4">
@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
               href={portfolioData.socialLinks.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary-foreground hover:text-primary transition-colors"
+              className="text-dark-blue hover:text-orange-accent transition-colors"
               aria-label="GitHub Profile"
             >
               <Github size={24} />
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
               href={portfolioData.socialLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary-foreground hover:text-primary transition-colors"
+              className="text-dark-blue hover:text-orange-accent transition-colors"
               aria-label="LinkedIn Profile"
             >
               <Linkedin size={24} />
@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
           {portfolioData.email && (
             <a
               href={`mailto:${portfolioData.email}`}
-              className="text-secondary-foreground hover:text-primary transition-colors"
+              className="text-dark-blue hover:text-orange-accent transition-colors"
               aria-label="Email"
             >
               <Mail size={24} />

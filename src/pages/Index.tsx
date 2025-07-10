@@ -8,11 +8,11 @@ import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { EducationSection } from "@/components/sections/EducationSection";
 import { CertificationsSection } from "@/components/sections/CertificationsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
-import { AnimatedSection } from "@/components/AnimatedSection"; // Importation du nouveau composant
+import { AnimatedSection } from "@/components/AnimatedSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-pattern"> {/* Added bg-pattern here */}
       <Navbar />
       <main className="flex-grow">
         <AnimatedSection id="hero">

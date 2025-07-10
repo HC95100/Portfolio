@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { portfolioData } from "@/data/portfolioData";
-import { motion } from "framer-motion"; // Import motion
+import { motion } from "framer-motion";
 
 interface NavLinkProps {
   href: string;
@@ -12,7 +12,7 @@ interface NavLinkProps {
 
 const NavLink: React.FC<NavLinkProps> = ({ href, children, onClick }) => {
   return (
-    <Button variant="ghost" asChild className="text-lg text-foreground hover:text-primary transition-colors">
+    <Button variant="ghost" asChild className="text-dark-text text-lg font-semibold hover:text-blue-primary transition-colors">
       <a href={href} onClick={onClick}>
         {children}
       </a>
@@ -33,16 +33,16 @@ export const Navbar: React.FC = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 120, damping: 14, delay: 0.2 }}
-      className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm"
+      className="sticky top-0 z-50 w-full border-b border-light-gray bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm py-3 px-8"
     >
       <div className="container flex h-16 items-center justify-between">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="flex items-center space-x-4"
+          className="flex items-center"
         >
-          <a href="#hero" onClick={() => scrollToSection("hero")} className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
+          <a href="#hero" onClick={() => scrollToSection("hero")} className="text-gradient-blue text-4xl font-bold hover:text-blue-primary/80 transition-colors">
             {portfolioData.fullName}
           </a>
         </motion.div>
