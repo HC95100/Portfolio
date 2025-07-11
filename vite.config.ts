@@ -4,14 +4,22 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig(() => ({
+  // Base URL when serving your project on GitHub Pages
+  base: '/My_portfolio/',
+
   server: {
-    host: "::",
+    host: '::',
     port: 8080,
   },
-  plugins: [dyadComponentTagger(), react()],
+
+  plugins: [
+    dyadComponentTagger(),
+    react(),
+  ],
+
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      '@': path.resolve(__dirname, './src'),
     },
   },
 }));
