@@ -5,7 +5,7 @@ import path from "path";
 
 export default defineConfig(() => ({
   // Base URL when serving your project on GitHub Pages
-  base: '/My_portfolio/',
+  base: '/',
 
   server: {
     host: '::',
